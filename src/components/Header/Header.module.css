@@ -1,0 +1,8 @@
+.header{
+    grid-area: h;
+    background-color: azure;
+    border-radius: 10px;
+}
+img{
+    width: 100px;
+}

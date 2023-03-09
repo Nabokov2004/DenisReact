@@ -1,0 +1,12 @@
+.content{
+    grid-area: c;
+    background-color: azure;
+    border-radius: 20px;
+
+
+}
+.main_photo{
+    width: 100%;
+    border-radius: 20px;
+}
+

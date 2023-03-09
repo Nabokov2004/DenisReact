@@ -1,0 +1,34 @@
+*{
+  font-size: 22px;
+  color: black;
+
+}
+.app-wrapper{
+  display: grid;
+  grid-template-row: 60px 1fr ;
+  grid-template-columns: 2fr  10fr;
+  grid-gap:10px;
+  grid-template-areas:
+          "h h"
+          "n c";
+  width: 98vw;
+  margin: 0 auto;
+  background-color: rgb(237,238,240)
+}
+
+
+
+
+
+h2{
+  font-size: 26px;
+
+}
+h3{
+  font-size: 32px;
+  margin-left:10%;
+}
+/*.text-area{
+  background-color: rgb(237,238,240);
+}*/
+

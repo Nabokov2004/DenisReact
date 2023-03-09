@@ -1,0 +1,29 @@
+.nav{
+    grid-area: n;
+    background-color: azure;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 40px ;
+}
+.settings {
+    margin-top: 30px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.item{
+    list-style-type: none;
+    text-decoration: none;
+}
+ a.activeLink{
+    list-style-type: none;
+    text-decoration: none;
+    color: #28286d;
+}
+/*.item a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.settings a{
+    list-style-type: none;
+    text-decoration: none;
+}*/

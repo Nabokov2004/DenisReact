@@ -1,0 +1,20 @@
+
+.circle{
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ACAB68;
+    border:1px solid;
+}
+.Feedback{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+
+}
+.question{
+
+    padding: 2%;
+}
