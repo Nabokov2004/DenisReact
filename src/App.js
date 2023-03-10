@@ -18,8 +18,8 @@ const App = () => {
            <Header/>
             <Nav/>
             <Routes>
-                <Route path="/profile" element={<Profile/>}/>
-                <Route path="/dialogs" element={<Dialogs/>}/>
+                <Route path="/profile/*" element={<Profile/>}/>
+                <Route path="/dialogs/*" element={<Dialogs/>}/>
             </Routes>
         </div>
         </BrowserRouter>

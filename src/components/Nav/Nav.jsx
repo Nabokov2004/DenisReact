@@ -7,12 +7,12 @@ const Nav = () => {
         <nav className={classes.nav}>
             <ul>
                 <li className={classes.item}>
-                    <NavLink to="profile" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
+                    <NavLink to="/profile" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
                         Profile
                     </NavLink>
                 </li>
                 <li className={classes.item}>
-                    <NavLink to="dialogs" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
+                    <NavLink to="/dialogs" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
                         Messages
                     </NavLink>
                 </li>
