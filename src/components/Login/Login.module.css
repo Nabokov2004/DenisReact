@@ -1,0 +1,20 @@
+.title{
+    margin-left: 12%;
+    font-size: 30px;
+}
+.wrapperForm{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    border-radius: 20px;
+    width: 320px;
+}
+.field{
+    border-radius: 7px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    border-radius: 20px;
+}

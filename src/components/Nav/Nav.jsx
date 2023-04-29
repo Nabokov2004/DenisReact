@@ -1,8 +1,10 @@
 import classes from './Nav.module.css';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 import React from "react";
 
 const Nav = () => {
+    const navigate = useNavigate()
     return (
         <nav className={classes.nav}>
             <ul>
@@ -14,6 +16,11 @@ const Nav = () => {
                 <li className={classes.item}>
                     <NavLink to="/dialogs" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
                         Messages
+                    </NavLink>
+                </li>
+                <li className={classes.item}>
+                    <NavLink to="/users" className = { navData => navData.isActive ? classes.activeLink : classes.item }>
+                      Users
                     </NavLink>
                 </li>
                 <li className={classes.item}>
@@ -31,9 +38,13 @@ const Nav = () => {
                         Settings
                     </a>
                 </li>
+                <li> <button onClick={()=>{
+                   return navigate('/users')
+                }}>Test</button></li>
 
             </ul>
         </nav>
+
     )
 
 }

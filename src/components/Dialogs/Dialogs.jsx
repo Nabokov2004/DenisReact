@@ -1,58 +1,53 @@
 import classes from './Dialogs.module.css';
-import React from "react";
-import {NavLink} from "react-router-dom";
+import React, {createRef} from "react";
 import DialogName from "./Dialogs.name/DialogName";
+import Message from "./Message/Message";
+import {Navigate} from "react-router";
+import {Field, reduxForm} from "redux-form";
 
-const Message = (props) =>{
-    return(<div className="Message">
-            {props.message}
-        </div>
 
-    )
+const AddMessageForm = (props) =>{
+    return(<form onSubmit={props.handleSubmit} className={classes.send}>
+        <Field className={classes.SendMessage } component={"textarea"} name={'newMessageBody'} placeholder={'Enter your message...'}/>
+
+        <button className={classes.AddMessage}> Go </button>
+
+    </form>)
 }
 
 
-let dialogsData=[
-    {name:'Denchik', id:1},
-    {name:'Maks', id:2},
-    {name:'den', id:3},
-    {name:'Inna', id:4},
-    {name:'Vika', id:5}
-]
-let messageData=[
-    {message:'Hi,how are you?'},
-    {message:'hey'},
-    {message:'nice'},
-    {message:'you?'}
-]
+const AddMessageFormRedux = reduxForm({form:"dialogAddMessageForm"})(AddMessageForm)
+
 
 
 const Dialogs = (props) => {
+    let state = props.dialogPage
+    let AddMessage = (values) => {
+        props.addMessage(values.newMessageBody)
+    }
+
+    let DialogsNameElement = state.dialogsData.map((dialog) => <DialogName name={dialog.name} id={dialog.id}
+                                                                                 src={dialog.scr}/>);
+
+    let messagesDataElement = state.messagesData.map((message) => <Message message={message.message}
+                                                                                 id={message.id}/>);
+
+    if (!props.isAuth) return <Navigate to={'/login'}/>
     return (
         <div className={classes.wrapper}>
             <div className={classes.Dialog}>
-                {/*<BrowserRouter></BrowserRouter>*/}
-
-
-               <DialogName name={dialogsData[0].name} id={dialogsData[0].id} />
-                <DialogName name={dialogsData[1].name} id={dialogsData[1].id} />
-                <DialogName name={dialogsData[2].name} id={dialogsData[2].id} />
-                <DialogName name={dialogsData[3].name} id={dialogsData[3].id} />
-                <DialogName name={dialogsData[4].name} id={dialogsData[4].id} />
-
-
-
+                {DialogsNameElement}
 
             </div>
-            <div className={classes.Message}>
-               <Message message={messageData[0].message}/>
-                <Message message={messageData[1].message}/>
+            <section>
+                <div className={classes.Message}>
+                    {messagesDataElement}
+                </div>
+                <AddMessageFormRedux onSubmit={AddMessage}  />
 
-            </div>
-
-
+            </section>
         </div>
     )
-
 }
 export default Dialogs;
+

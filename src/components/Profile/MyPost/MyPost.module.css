@@ -5,7 +5,7 @@
     border-radius: 20px;
 
 }
-.send{
+.AddPost{
     width:15%;
     height: 50px;
     border-radius: 20px;
@@ -13,6 +13,9 @@
     margin-top: 20px;
     margin-left: 75%;
     margin-bottom: 2px;
+}
+.AddPost:active{
+    background-color: #3a3b61;
 }
 .wrapper{
     width: 100%;

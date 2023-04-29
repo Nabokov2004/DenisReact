@@ -1,15 +1,24 @@
 import classes from "./avatar.module.css";
-import Ava from "./Ava";
+import Ava from "./Ava/Ava";
+import Preloader from "../../Common/Preloader/Preloader";
+import ProfileStatus from './ProfileStatus'
+import React from "react";
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 
 
-const Ava_bio = () =>{
+const Ava_bio = (props) =>{
+    if (!props.profile){
+        return <Preloader/>
+    }
+
     return(
 
     <div className={classes.prof}>
-        <Ava />
+        <Ava profile={props}/>
         <div className={classes.Bio}>
-            <h2>Vinny Pux</h2>
+            <h2>{props.profile.fullName}</h2>
+            <ProfileStatusWithHooks status ={props.status}  updateStatus ={props.updateStatus}/>
             <p>
                 age:10 years; <br/>
                 skills: many;<br/>

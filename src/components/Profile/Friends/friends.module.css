@@ -1,0 +1,20 @@
+.wrapperFriends{
+    margin-left: 10%;
+}
+.wrapImg{
+    display: flex;
+
+}
+.circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.circle img{
+    width:100%
+}
+h2{
+    font-size: 34px;
+}

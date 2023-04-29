@@ -1,0 +1,76 @@
+.content{
+    grid-area: c;
+    background-color: azure;
+    border-radius: 20px;
+
+
+}
+.main_photo{
+    width: 100%;
+    border-radius: 20px;
+}
+.main_name{
+    text-align: center;
+}
+.circle_ava{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.circle_ava img{
+    width: 100%;
+}
+.name_ava{
+    text-align: center;
+    margin-left: 10%;
+}
+.firstSection{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.name_subscribe{
+    display: flex;
+text-align: center;
+    margin: 10px;
+    flex-direction: column;
+
+
+}
+.name {
+    border: 1px solid #6667AB;
+    font-size: 15px;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+.subscribe{
+    display: flex;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #6667AB;
+    font-size: 15px;
+    border-radius: 7px;
+    justify-content: center;
+    padding: 3px;
+
+}
+.secondSection{
+    border: 1px solid #6667AB;
+    margin: 2%;
+    border-radius: 20px;
+    padding: 5px;
+    width: 80%;
+
+}
+.wrap{
+    display: flex;
+}
+.selectedPage{
+    font-weight: bold;
+
+}
