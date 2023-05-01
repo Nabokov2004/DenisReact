@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/DenisReact/static/css/main.4eb910a4.css",
-    "main.js": "/DenisReact/static/js/main.3e388e6e.js",
+    "main.css": "/DenisReact/static/css/main.8ffccd74.css",
+    "main.js": "/DenisReact/static/js/main.98238ba5.js",
     "static/js/787.28cb0dcd.chunk.js": "/DenisReact/static/js/787.28cb0dcd.chunk.js",
     "static/media/UserPhoto.png": "/DenisReact/static/media/UserPhoto.9dc92b0a1003b149f6c9.png",
     "index.html": "/DenisReact/index.html",
     "static/media/loading.svg": "/DenisReact/static/media/loading.724f1d58b5b3f61b4fcb1f36f84642d4.svg",
-    "main.4eb910a4.css.map": "/DenisReact/static/css/main.4eb910a4.css.map",
-    "main.3e388e6e.js.map": "/DenisReact/static/js/main.3e388e6e.js.map",
+    "main.8ffccd74.css.map": "/DenisReact/static/css/main.8ffccd74.css.map",
+    "main.98238ba5.js.map": "/DenisReact/static/js/main.98238ba5.js.map",
     "787.28cb0dcd.chunk.js.map": "/DenisReact/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4eb910a4.css",
-    "static/js/main.3e388e6e.js"
+    "static/css/main.8ffccd74.css",
+    "static/js/main.98238ba5.js"
   ]
 }
